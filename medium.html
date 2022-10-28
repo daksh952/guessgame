@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Guess-Game</title>
+ 
+   <link href='https://fonts.googleapis.com/css?family=Montez|Lobster|Josefin+Sans|Shadows+Into+Light|Pacifico|Amatic+SC:700|Orbitron:400,900|Rokkitt|Righteous|Dancing+Script:700|Bangers|Chewy|Sigmar+One|Architects+Daughter|Abril+Fatface|Covered+By+Your+Grace|Kaushan+Script|Gloria+Hallelujah|Satisfy|Lobster+Two:700|Comfortaa:700|Cinzel|Courgette' rel='stylesheet' type='text/css'>
+
+   <style>
+  
+      body {
+         background-image: url(https://wallpapercave.com/wp/wp11148268.jpg);
+         background-size: cover;
+         height: 100vh;
+         background-repeat: no-repeat;
+         background-position: center center;
+         overflow: hidden;
+      }
+
+   
+      .game-grid{
+         position: absolute;
+         left: 50%;
+         top: 50%;
+         transform: translate(-50%, -50%);
+         display: grid;
+         grid-template-columns: repeat(4, 5.5rem);
+         gap: 5px;
+         justify-content: center;
+         align-items: center;
+      }
+      .card{
+         background-color: rgba(12, 19, 55, 0.9);
+         width: 5.5rem;
+         height: 5.5rem;
+         border-radius: 8px;
+         font-size: 4rem;
+      
+      }
+     
+      
+      .footer button {
+         position: absolute;
+         bottom:15px;
+         font-size: 35px;
+         background-color: black;
+         color: #fff;
+         margin-left:15px;
+      }
+   </style>
+</head>
+<body>
+  
+   
+   
+  <section class="game-grid">
+  <div data-value="0" class="card">
+         <img class="hide" data-value="100"  id="0gift" src="gift.png" style="width: 5.5rem; border-radius: 8px;" alt="">
+      </div>
+      <div data-value="1" class="card">
+         <img class="hide" data-value="100"  id="1miss" src="miss.jpg" style="width: 5.5rem; border-radius: 8px;" alt="">
+      </div>
+      <div data-value="2" class="card">
+         <img class="hide" data-value="100"  id="2miss" src="miss.jpg" style="width: 5.5rem; border-radius: 8px;" alt="">
+      </div>
+      <div data-value="3" class="card">
+         <img class="hide" data-value="100"  id="3miss" src="miss.jpg" style="width: 5.5rem; border-radius: 8px;" alt="">
+      </div>
+      <div data-value="4" class="card">
+         <img class="hide" data-value="100"  id="4miss" src="miss.jpg" style="width: 5.5rem; border-radius: 8px;" alt="">
+      </div>
+      <div data-value="5" class="card">
+         <img class="hide" data-value="100"  id="5miss" src="miss.jpg" style="width: 5.5rem; border-radius: 8px;" alt="">
+      </div>
+      <div data-value="6" class="card">
+         <img class="hide" data-value="100"  id="6miss" src="miss.jpg" style="width: 5.5rem; border-radius: 8px;" alt="">
+      </div>
+      <div data-value="7" class="card">
+         <img class="hide" data-value="100"  id="7miss" src="danger.png" style="width: 5.5rem; border-radius: 8px;" alt="">
+      </div>
+      <div data-value="8" class="card">
+         <img class="hide" data-value="100"  id="8miss" src="miss.jpg" style="width: 5.5rem; border-radius: 8px;" alt="">
+      </div>
+      <div data-value="9" class="card">
+         <img class="hide" data-value="100"  id="9miss" src="miss.jpg" style="width: 5.5rem; border-radius: 8px;" alt="">
+      </div>
+      <div data-value="10" class="card">
+         <img class="hide" data-value="100"  id="10gift" src="gift.png" style="width: 5.5rem; border-radius: 8px;" alt="">
+      </div>
+      <div data-value="11" class="card">
+         <img class="hide" data-value="100"  id="11miss" src="miss.jpg" style="width: 5.5rem; border-radius: 8px;" alt="">
+      </div>
+      <div data-value="12" class="card">
+         <img class="hide" data-value="100"  id="12miss" src="gift.png" style="width: 5.5rem; border-radius: 8px;" alt="">
+      </div>
+      
+      <div data-value="13" class="card">
+         <img class="hide" data-value="100"  id="13miss" src="miss.jpg" style="width: 5.5rem; border-radius: 8px;" alt="">
+      </div>
+      <div data-value="14" class="card">
+         <img class="hide" data-value="100"  id="14miss" src="miss.jpg" style="width: 5.5rem; border-radius: 8px;" alt="">
+      </div>
+      <div data-value="15" class="card">
+         <img class="hide" data-value="100"  id="15miss" src="miss.jpg" style="width: 5.5rem; border-radius: 8px;" alt="">
+      </div>
+      
+   </section>
+   <div class="footer">
+      <button onclick="document.location='level.html'">&#x2190;</button></div>
+</body>
+</html>

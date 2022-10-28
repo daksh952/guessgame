@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Montez|Lobster|Josefin+Sans|Shadows+Into+Light|Pacifico|Amatic+SC:700|Orbitron:400,900|Rokkitt|Righteous|Dancing+Script:700|Bangers|Chewy|Sigmar+One|Architects+Daughter|Abril+Fatface|Covered+By+Your+Grace|Kaushan+Script|Gloria+Hallelujah|Satisfy|Lobster+Two:700|Comfortaa:700|Cinzel|Courgette' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="level.css">
+    <title>Guess Game</title>
+</head>
+<style>
+    body, html {
+    height: 100%;
+    margin: 0;
+    overflow:hidden;
+  }
+  
+  .bg {
+    background-image: url(https://wallpapercave.com/wp/wp11148268.jpg);
+    height: 100%; 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+
+  h2  {
+    
+      display:inline;
+      justify-content: center;
+      font-family:Gloria Hallelujah;
+      font-size: 60px;
+      color:#4d084a;
+      padding: 425px;
+  
+   
+}
+
+  .btn {
+   font-size:40px;
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
+    
+    
+  }
+  .btn1 , .btn2 ,.btn3{
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px white;
+  }
+  
+  .btn1:hover, .btn2:hover, .btn3:hover {background-color: #253f40}
+  
+  .btn1:active, .btn2:active, .btn3:active {
+    background-color: #253f40;
+    box-shadow: 0 5px white;
+    transform: translateY(4px);
+  }
+  
+  .btn1 {padding: 10px 24px;}
+  .btn2 {padding: 10px 24px;}
+  .btn3 {padding: 10px 24px;}
+
+  .footer button {
+    position: absolute;
+    bottom:15px;
+    font-size: 35px;
+    background-color: black;
+    color: #fff;
+    margin-left: 15px;
+ }
+</style>
+<body>
+    <div class="bg">
+        <div class="header">
+            <h2>Select the level </h2>
+        </div>
+        <div class="btn">
+            <a href="easy.html"><button class="btn1">Easy</button></a>
+            <a href="medium.html"><button class="btn2">Medium</button></a>
+            <a href="hard.html"><button class="btn3">Hard</button></a>
+        </div>
+    </div>
+    <div class="footer">
+        <button onclick="document.location='index.html'">&#x2190;</button></div>
+</body>
+</html>
